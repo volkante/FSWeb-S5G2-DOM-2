@@ -7,7 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <title>Ergineer Homeworks!</title>
-  
+  <style>
+    .draggable {
+      cursor: move;
+      background-color: lime;
+    }
+  </style>
 </head>
 
 <body>
@@ -31,7 +36,7 @@
       <p>Gezici sefer modern, temiz web tasarımı blog yazarı temiz web sitesi teması web sitesi modern. Güzel tasarım tasarla, travelblogger macera WordPress yolculuk tutkusu teması blog yazarı web sitesi keşif teması travelblogger. Macera eğlencesi
         gezgin güzel tasarım web sitesi seferi.</p>
     </header>
-    <section class="content-section">
+    <section draggable="true" class="content-section">
       <div class="text-content">
         <h2>Haydi Gidelim!</h2>
         <p>Haydi gidelum hayde hayde gidelum hayde hayde gidelum hayde.</p>
@@ -41,7 +46,7 @@
         <img src="http://localhost:9000/img/adventure.jpg" alt="Maceraya atılalım!">
       </div>
     </section>
-    <section class="content-section inverse-content">
+    <section draggable="true" class="content-section inverse-content">
       <div class="img-content">
         <img src="http://localhost:9000/img/fun.jpg" class="img-fluid rounded" alt="Haydi Eğlenelim!">
       </div>

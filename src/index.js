@@ -80,9 +80,29 @@ const busImg = document.querySelector("img");
 
 document.addEventListener("wheel", ()=>{
     busImg.style.transform = "rotate(180deg)";
+});
+
+// klavyede e'ye basınca arkaplanı kırmızı yap.
+
+document.addEventListener("keydown", (e)=>{
+    if (e.key==="p"){
+        document.querySelector("body").style.backgroundColor = "red"
+    }
+});
+
+//bir tane drag/drop event sürüklenince sürükleniyoruz yazsın ve rengi yeşil olsun,bırakınca eski renk gelsin.
+
+const draggables = document.querySelectorAll("[draggable='true']");
+
+draggables.forEach(item=>{
+    item.addEventListener("dragstart", (e)=>{
+        console.log("sürükleniyoruz");
+        item.classList.add("draggable");
+    })
+    item.addEventListener("dragend", (e)=>{
+        item.classList.remove("draggable");
+    })
 })
-
-
 
 
 //aynısı sonraki çalışmam
